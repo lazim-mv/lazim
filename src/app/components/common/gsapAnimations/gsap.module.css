@@ -1,0 +1,104 @@
+.expHeadingText {
+    font-size: 7.9vw;
+    margin-top: 3.7037037037037033vw;
+    font-weight: bolder;
+}
+
+.text {
+    color: rgba(242, 240, 240, 0.2);
+    background: linear-gradient(to right, #b6b6b6, #ffffff) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+}
+
+.expDecText {
+    font-size: 1.3756613756613756vw;
+    margin-top: 1.3756613756613756vw;
+}
+
+.effect4 {
+    height: 50vh;
+    position: relative;
+    margin-top: 5vw;
+}
+
+.effect4 h2 {
+    height: 20vh;
+}
+
+.text4 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    overflow: hidden;
+    font-size: 5.291005291005291vw;
+    line-height: normal;
+}
+
+.text4 span {
+    display: inline-block;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .expHeadingText {
+        font-size: 10.5vw;
+        letter-spacing: 0.2px;
+        line-height: normal;
+        font-weight: 800;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .expDecText {
+        font-size: 6.4vw;
+        letter-spacing: normal;
+        padding: 0 5px !important;
+        line-height: normal;
+        width: 87.5vw;
+    }
+
+    .name {
+        font-size: 14vw;
+        letter-spacing: 0;
+        line-height: normal;
+        font-weight: 800;
+    }
+
+    .description {
+        margin: 5.333333333333334vw 0;
+        font-size: 4.8vw;
+        line-height: normal;
+        width: 87.5vw;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .animatedH1 {
+        font-size: 13vw;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        line-height: normal;
+        font-weight: 800;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        line-height: normal;
+    }
+
+    .char {
+        transform: translateY(115px);
+        transition: transform 0.5s;
+    }
+
+    .heroDesc {
+        margin: 5.333333333333334vw 0;
+        font-size: 5.5vw;
+        line-height: normal;
+        width: 87.5vw;
+        font-weight: 400;
+        letter-spacing: 0.026455026455026457vw;
+        text-transform: math-auto;
+    }
+}

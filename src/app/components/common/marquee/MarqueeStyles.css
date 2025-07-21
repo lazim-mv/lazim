@@ -1,0 +1,28 @@
+.marquee-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    width: fit-content;
+    animation: scroll-marquee 45s linear infinite;
+}
+
+.shadow-left {
+    background: linear-gradient(to right, var(--bg-900), transparent);
+}
+
+.shadow-right {
+    background: linear-gradient(to left, var(--bg-900), transparent);
+}
+
+@keyframes scroll-marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
