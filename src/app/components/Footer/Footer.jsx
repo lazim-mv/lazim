@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { Mail, Linkedin, Instagram, MessageCircle, Github } from "lucide-react";
 import TextReveal from '../common/gsapAnimations/TextReveal';
 import { usePathname } from 'next/navigation';
+import SectionTitleAndDesc from '../common/SectionTitleAndDesc';
 
 
 
@@ -19,7 +20,7 @@ const Footer = () => {
                     className='flex md:flex-row flex-col gap-4 bg-bg-800 rounded-3xl px-8 
                         py-14 shadow md:justify-between justify-center items-center
                         text-center md:text-left md:min-h-[17.195767195767196vw]
-                        footerCustom'
+                        '
 
                 >
                     <div className='flex-col items-start justify-center '>
@@ -31,9 +32,9 @@ const Footer = () => {
                             <p className="text-xs" style={{ color: 'var(--text-primary)' }}>Available for work</p>
                         </div>
 
-                        <div className='flex flex-col md:gap-2'>
-                            <TextReveal text="From Idea to Reality." containerRef={sectionRef} animationStart={'top bottom'} heading />
-                            <TextReveal text="Let's Talk" containerRef={sectionRef} animationStart={'top bottom'} heading />
+                 
+                        <div className='w-[85vw] md:w-[70%] mx-auto md:mx-0'>
+                            <SectionTitleAndDesc text="From Idea to Reality Let's Talk." heading animation={false} />
                         </div>
                     </div>
 
@@ -55,7 +56,7 @@ const Footer = () => {
                     </div>
                 </div>
             }
-            <div className="z-10 flex flex-col justify-between gap-4 sm:flex-row items-center">
+            <div className="z-10 flex flex-col justify-between gap-4 sm:flex-row items-center mb-[18vw] md:mb-0">
                 <p className="mb-4 text-center text-sm sm:mb-0 sm:text-left">
                     © 2025 Lazim MV. All rights reserved.
                 </p>

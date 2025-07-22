@@ -31,7 +31,7 @@ const ClientComponent = () => {
                                 Full Name
                             </label>
                             <input
-                                className="flex h-11 w-full rounded-xl border border-bg-700  px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
+                                className="flex h-11 w-full rounded-xl border border-bg-600 bg-bg-800 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
                                 id=":r8:-form-item"
                                 aria-describedby=":r8:-form-item-description"
                                 aria-invalid="false"
@@ -48,7 +48,7 @@ const ClientComponent = () => {
                                 Email
                             </label>
                             <input
-                                className="flex h-11 w-full rounded-xl border border-bg-700  px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
+                                className="flex h-11 w-full rounded-xl border border-bg-600 bg-bg-800 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
                                 id=":r9:-form-item"
                                 aria-describedby=":r9:-form-item-description"
                                 aria-invalid="false"
@@ -64,7 +64,7 @@ const ClientComponent = () => {
                                 Message
                             </label>
                             <textarea
-                                className="flex min-h-[100px] w-full rounded-xl border border-bg-700  px-3 py-2 text-sm ring-offset-background placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900 resize-none"
+                                className="flex min-h-[100px] w-full rounded-xl border border-bg-600 bg-bg-800 px-3 py-2 text-sm ring-offset-background placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900 resize-none"
                                 name="message"
                                 id=":ra:-form-item"
                                 aria-describedby=":ra:-form-item-description"
@@ -90,8 +90,8 @@ const ClientComponent = () => {
                             </a>
                         </div>
                     </form>
-                    <div className=' h-full w-full rounded-3xl border border-bg-700 p-6 shadow'>
-                        <div className="flex-center mb-5 gap-2 rounded-full px-4 py-2 w-max mx-auto md:mx-0" style={{ background: 'rgba(0,217,255,0.3)' }}>
+                    <div className='bg-bg-800 h-full w-full rounded-3xl p-6 shadow'>
+                        <div className="flex-center mb-5 gap-2 rounded-full px-4 py-2 w-max mr-auto md:mx-0" style={{ background: 'rgba(0,217,255,0.3)' }}>
                             <span className="relative flex h-[6px] w-[6px]">
                                 <span className="bg-highlight-primary absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" />
                                 <span className="bg-highlight-primary relative inline-flex h-full w-full rounded-full" />
@@ -105,7 +105,7 @@ const ClientComponent = () => {
                             height={100}
                             decoding="async"
                             data-nimg={1}
-                            className="border-bg-700 aspect-square overflow-hidden rounded-full border object-cover p-2"
+                            className="border-bg-600 aspect-square overflow-hidden rounded-full border object-cover p-2"
                             src="/aboutPage/me.jpg"
                             style={{ color: "transparent" }}
                         />
@@ -168,13 +168,13 @@ const ClientComponent = () => {
                     <SectionName title="Faqs" extraClass="mb-4" animation={false} />
                     <SectionTitleAndDesc text="Have Questions?" heading animation={false} />
                 </div>
-                <div className='w-full md:w-2/3'>
+                <div className='w-full md:w-2/3 mt-8 md:mt-0'>
                     {faqs.map((faq, index) => {
                         const isOpen = expanded === index;
                         return (
                             <div
                                 key={index}
-                                className="border border-bg-700 rounded-2xl overflow-hidden transition-all duration-800 mb-4"
+                                className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800 mb-4"
                             >
                                 <button
                                     className="w-full text-left p-4 flex items-center justify-between cursor-pointer"

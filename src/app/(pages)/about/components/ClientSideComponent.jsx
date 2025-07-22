@@ -170,9 +170,9 @@ const ClientSideComponent = () => {
                 </div>
                 <FadeInOnScroll>
                     <div className=' mx-auto mt-8 flex  w-full flex-col items-start justify-center overflow-hidden'>
-                        <div className='flex gap-4'>
+                        <div className='flex gap-4 flex-col md:flex-row'>
                             {projectSequenceData.map((item, index) => (
-                                <div className="w-full rounded-3xl border border-bg-700 p-6 min-w-[300px]" key={index}>
+                                <div className="w-full rounded-3xl border border-bg-600 p-6 min-w-[300px]" key={index}>
                                     <div className="mb-4 w-fit rounded-full border border-bg-600 bg-bg-700 p-4 text-highlight-primary">
                                         <item.icon size={18} strokeWidth={2} />
                                     </div>
@@ -191,7 +191,7 @@ const ClientSideComponent = () => {
             <section className='max-screen flex flex-col-reverse items-center gap-8 md:flex-row md:gap-20'>
                 <div className='grid grid-cols-1 grid-rows-[masonry] gap-4 sm:grid-cols-2'>
                     {workPhilosophies.map((item, index) => (
-                        <div className="rounded-3xl border border-bg-700 p-6 h-fit w-full " key={index}>
+                        <div className="rounded-3xl border border-bg-600 p-6 h-fit w-full " key={index}>
                             <FadeInOnScroll>
                                 <div className="mb-4 w-fit rounded-full border border-bg-600 bg-bg-700 p-4 text-highlight-primary">
                                     <item.icon size={18} strokeWidth={2} />
