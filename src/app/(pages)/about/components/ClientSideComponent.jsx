@@ -70,7 +70,7 @@ const ClientSideComponent = () => {
 
                     </p>
 
-                    <a href="/about" className='m-auto md:m-0'>
+                    <a href="/Mohammed Lazim Latheef.pdf" target="_blank" rel="noopener noreferrer" className="m-auto md:m-0">
                         <button
                             className="btn ring-offset-background focus-visible:ring-highlight-primary whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 btn__outline"
                             type="button"
@@ -84,6 +84,7 @@ const ClientSideComponent = () => {
                             </span>
                         </button>
                     </a>
+
 
                 </div>
             </section>
@@ -173,7 +174,7 @@ const ClientSideComponent = () => {
                             {projectSequenceData.map((item, index) => (
                                 <div className="w-full rounded-3xl border border-bg-700 p-6 min-w-[300px]" key={index}>
                                     <div className="mb-4 w-fit rounded-full border border-bg-600 bg-bg-700 p-4 text-highlight-primary">
-                                        <item.icon size={18} />
+                                        <item.icon size={18} strokeWidth={2} />
                                     </div>
                                     <h5 className="mb-2 font-satoshi">{item.step}.{item.title}</h5>
                                     <p>
@@ -193,7 +194,7 @@ const ClientSideComponent = () => {
                         <div className="rounded-3xl border border-bg-700 p-6 h-fit w-full " key={index}>
                             <FadeInOnScroll>
                                 <div className="mb-4 w-fit rounded-full border border-bg-600 bg-bg-700 p-4 text-highlight-primary">
-                                    <item.icon size={18} />
+                                    <item.icon size={18} strokeWidth={2} />
                                 </div>
                                 <h5 className="mb-2 font-satoshi">{item.title}</h5>
                                 <p>{item.description}</p>

@@ -47,7 +47,7 @@ const RotatingWheel = ({
                 {/* Arrow in center without background */}
                 <foreignObject x="90" y="90" width="20" height="20">
                     <div className="w-full h-full flex items-center justify-center duration-500 ease-in-out group-hover:rotate-45 ">
-                        <ArrowUpRight size={20} color="var(--text-secondary)" />
+                        <ArrowUpRight size={20} color="var(--text-secondary)" strokeWidth={2}/>
                     </div>
                 </foreignObject>
 

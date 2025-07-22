@@ -50,12 +50,12 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
             style={{ backgroundColor: "var(--bg-900)" }}
         >
             {/* Animated background grid */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.05)_1px,transparent_0)] [background-size:20px_20px] animate-pulse" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] animate-pulse" />
 
             {/* Floating orbs */}
-            <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl animate-pulse" />
+            {/* <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl animate-pulse" />
             <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-blue-500/10 rounded-full blur-2xl animate-pulse delay-1000" />
-            <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl animate-pulse delay-500" />
+            <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl animate-pulse delay-500" /> */}
 
             {/* Main content */}
             <div className="relative z-10 flex flex-col items-center space-y-8">
@@ -89,7 +89,7 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
 
                 {/* Loading text with typewriter effect */}
                 <div className="text-center space-y-3 font-normal">
-                    <h1 className="text-xl font-light text-slate-200 tracking-wide">
+                    <h1 className="text-xl font-light text-slate-200 tracking-wide" style={{ color: "var(--text-primary)" }}>
                         Loading Portfolio{dots}
                     </h1>
 

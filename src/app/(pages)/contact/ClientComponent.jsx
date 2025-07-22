@@ -16,9 +16,11 @@ const ClientComponent = () => {
         <>
             <section className='max-screen'>
                 <SectionName title="connect with me" extraClass="mb-4" />
-                <SectionTitleAndDesc text="Let's start a project together" />
+                <div className='w-[100%] md:w-[40%]'>
+                    <SectionTitleAndDesc text="Let's start a project together" heading />
+                </div>
 
-                <div className='flex w-full flex-col gap-10 sm:flex-row sm:gap-8'>
+                <div className='flex w-full flex-col gap-10 sm:flex-row sm:gap-8 mt-8' >
                     <form className='w-full space-y-4'>
 
                         <div className="space-y-2 mb-4">
@@ -29,7 +31,7 @@ const ClientComponent = () => {
                                 Full Name
                             </label>
                             <input
-                                className="flex h-11 w-full rounded-xl border border-bg-600 bg-bg-800 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
+                                className="flex h-11 w-full rounded-xl border border-bg-700  px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
                                 id=":r8:-form-item"
                                 aria-describedby=":r8:-form-item-description"
                                 aria-invalid="false"
@@ -46,7 +48,7 @@ const ClientComponent = () => {
                                 Email
                             </label>
                             <input
-                                className="flex h-11 w-full rounded-xl border border-bg-600 bg-bg-800 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
+                                className="flex h-11 w-full rounded-xl border border-bg-700  px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900"
                                 id=":r9:-form-item"
                                 aria-describedby=":r9:-form-item-description"
                                 aria-invalid="false"
@@ -62,7 +64,7 @@ const ClientComponent = () => {
                                 Message
                             </label>
                             <textarea
-                                className="flex min-h-[100px] w-full rounded-xl border border-bg-600 bg-bg-800 px-3 py-2 text-sm ring-offset-background placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900 resize-none"
+                                className="flex min-h-[100px] w-full rounded-xl border border-bg-700  px-3 py-2 text-sm ring-offset-background placeholder:text-text-secondary focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-highlight-primary focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-bg-900 resize-none"
                                 name="message"
                                 id=":ra:-form-item"
                                 aria-describedby=":ra:-form-item-description"
@@ -70,14 +72,31 @@ const ClientComponent = () => {
                                 defaultValue={""}
                             />
                         </div>
+
+                        <div className='w-max flex justify-end items-center'>
+                            <a href="/contact">
+                                <button
+                                    className="btn ring-offset-background focus-visible:ring-highlight-primary whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 btn__outline"
+                                    type="button"
+                                    aria-disabled="false"
+                                >
+                                    <span className="btn__ripple" />
+                                    <span className="block overflow-hidden">
+                                        <span className="btn__text" data-attr="Submit">
+                                            Submit
+                                        </span>
+                                    </span>
+                                </button>
+                            </a>
+                        </div>
                     </form>
-                    <div className='bg-bg-800 h-full w-full rounded-3xl p-6 shadow'>
+                    <div className=' h-full w-full rounded-3xl border border-bg-700 p-6 shadow'>
                         <div className="flex-center mb-5 gap-2 rounded-full px-4 py-2 w-max mx-auto md:mx-0" style={{ background: 'rgba(0,217,255,0.3)' }}>
                             <span className="relative flex h-[6px] w-[6px]">
                                 <span className="bg-highlight-primary absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" />
                                 <span className="bg-highlight-primary relative inline-flex h-full w-full rounded-full" />
                             </span>
-                            <p className="text-xs" style={{ color: 'white' }}>Available for work</p>
+                            <p className="text-xs" style={{ color: 'var(--text-primary)' }}>Available for work</p>
                         </div>
                         <img
                             alt="Lazim Latheef (Lazim Mv) Lazim"
@@ -86,7 +105,7 @@ const ClientComponent = () => {
                             height={100}
                             decoding="async"
                             data-nimg={1}
-                            className="border-bg-600 aspect-square overflow-hidden rounded-full border object-cover p-2"
+                            className="border-bg-700 aspect-square overflow-hidden rounded-full border object-cover p-2"
                             src="/aboutPage/me.jpg"
                             style={{ color: "transparent" }}
                         />
@@ -155,7 +174,7 @@ const ClientComponent = () => {
                         return (
                             <div
                                 key={index}
-                                className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800 mb-4"
+                                className="border border-bg-700 rounded-2xl overflow-hidden transition-all duration-800 mb-4"
                             >
                                 <button
                                     className="w-full text-left p-4 flex items-center justify-between cursor-pointer"

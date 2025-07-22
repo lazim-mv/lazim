@@ -43,7 +43,8 @@ const Services = () => {
                             <FadeInOnScroll key={index}>
                                 <div
                                     key={item.id}
-                                    className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800"
+                                    // className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800"
+                                    className="border border-bg-700 rounded-2xl overflow-hidden transition-all duration-800"
                                 >
                                     <button
                                         className="w-full text-left p-4 flex items-center justify-between cursor-pointer"

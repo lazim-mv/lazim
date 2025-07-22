@@ -6,6 +6,7 @@ import Head from 'next/head';
 import Footer from './components/Footer/Footer';
 import BottomFade from './components/common/BottomFade';
 import Header from './components/Header/Header';
+import MobileNav from './components/MobileNav/MobileNav';
 
 const satoshi = localFont({
   src: [
@@ -81,8 +82,12 @@ export default function RootLayout({ children }) {
         className={` ${satoshi.variable}  ${clashDisplay.variable} antialiased relative flex h-full min-h-dvh flex-col`}
       >
         <SmoothScrolling>
+
           <div className="flex grow flex-col items-center">
+            <div className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] animate-pulse" />
+
             <Header />
+            <MobileNav />
             <BottomFade fadeDirection="bottom" placement="top" />
             <main className="grow w-[100%]">
               <div

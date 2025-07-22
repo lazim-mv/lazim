@@ -15,17 +15,20 @@ const Footer = () => {
     return (
         <section className='max-screen py-sm z-40 space-y-6 pb-0' style={{ paddingBottom: "10px" }} ref={sectionRef}>
             {pathname !== "/contact" &&
-                <div className='
-                    flex md:flex-row flex-col gap-4 bg-bg-800 rounded-3xl px-8 
-                    py-14 shadow md:justify-between justify-center items-center
-                     text-center md:text-left md:min-h-[17.195767195767196vw]'>
+                <div
+                    className='flex md:flex-row flex-col gap-4 bg-bg-800 rounded-3xl px-8 
+                        py-14 shadow md:justify-between justify-center items-center
+                        text-center md:text-left md:min-h-[17.195767195767196vw]
+                        footerCustom'
+
+                >
                     <div className='flex-col items-start justify-center '>
                         <div className="flex-center mb-5 gap-2 rounded-full px-4 py-2 w-max mx-auto md:mx-0" style={{ background: 'rgba(0,217,255,0.3)' }}>
                             <span className="relative flex h-[6px] w-[6px]">
                                 <span className="bg-highlight-primary absolute inline-flex h-full w-full animate-ping rounded-full opacity-75" />
                                 <span className="bg-highlight-primary relative inline-flex h-full w-full rounded-full" />
                             </span>
-                            <p className="text-xs" style={{ color: 'white' }}>Available for work</p>
+                            <p className="text-xs" style={{ color: 'var(--text-primary)' }}>Available for work</p>
                         </div>
 
                         <div className='flex flex-col md:gap-2'>
@@ -35,7 +38,7 @@ const Footer = () => {
                     </div>
 
                     <div className='w-max flex justify-end items-center'>
-                        <a href="/about">
+                        <a href="/contact">
                             <button
                                 className="btn ring-offset-background focus-visible:ring-highlight-primary whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 btn__outline"
                                 type="button"

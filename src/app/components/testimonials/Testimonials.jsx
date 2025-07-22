@@ -39,7 +39,11 @@ const Testimonials = ({ isMobile, hasMounted }) => {
                                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                                 >
                                     {testimonialsData.map((data, index) => (
-                                        <div key={index} className='w-full flex-shrink-0 border-bg-700 flex h-fit flex-col gap-4 rounded-3xl border p-6 sm:p-8'>
+                                        <div key={index}
+                                            // className='w-full flex-shrink-0 border-bg-700 bg-bg-700 flex h-fit flex-col gap-4 rounded-3xl border p-6 sm:p-8'
+                                            className='w-full flex-shrink-0 border-bg-700 flex h-fit flex-col gap-4 rounded-3xl border p-6 sm:p-8'
+
+                                        >
                                             <p className='' >
                                                 {data.testimonial}
                                             </p>
