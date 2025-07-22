@@ -112,7 +112,7 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
                 </div>
 
                 {/* Status indicators */}
-                <div className="flex space-x-6 text-xs text-slate-500">
+                {/* <div className="flex space-x-6 text-xs text-slate-500">
                     <div className="flex items-center space-x-2">
                         <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
                         <span>Initializing</span>
@@ -125,7 +125,7 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
                         <div className="w-2 h-2 bg-purple-500 rounded-full animate-pulse delay-700" />
                         <span>Preparing UI</span>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             {/* Bottom accent */}

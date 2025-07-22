@@ -56,7 +56,9 @@ const ClientSideComponent = () => {
                 </div>
                 <div className='w-full space-y-6'>
                     <h1
-                        className="text-balance lg:text-7xl"
+                        className="text-balance 
+                        text-[3rem] leading-none md:text-6xl lg:w-3/4 lg:text-7xl
+                        "
                         style={{ width: "100%" }}
                     >
                         A <span className="text-highlight-primary">creative developer</span>
@@ -64,10 +66,8 @@ const ClientSideComponent = () => {
                         & digital designer
                     </h1>
 
-                    <p className='text-balance w-[70%]'>
-                        I collaborate with brands globally to design impactful, mission-focused websites that drive results and achieve business goals.
-
-
+                    <p className='text-balance w-[100%] md:w-[70%]'>
+                        I build modern, user friendly web and mobile experiences focused on performance, usability, and real world impact
                     </p>
 
                     <a href="/Mohammed Lazim Latheef.pdf" target="_blank" rel="noopener noreferrer" className="m-auto md:m-0">

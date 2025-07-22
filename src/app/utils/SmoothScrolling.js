@@ -4,8 +4,10 @@ import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 import gsap, { ScrollTrigger } from "./gsapInit";
 import LoadingScreen from "../components/common/LoadingScreen";
+import { usePathname } from "next/navigation";
 
 export default function SmoothScrolling({ children }) {
+  const pathname = usePathname();
   const lenisRef = useRef(null);
   const [isReady, setIsReady] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
