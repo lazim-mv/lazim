@@ -25,7 +25,9 @@ const AllProjects = () => {
                 {projectData.map((data, index) => (
                     <div className="opacity-container-child group h-fit w-full cursor-pointer sm:even:mt-14" key={index}>
                         <FadeInOnScroll>
-                            <a className="h-fit w-full" href="projects/aora">
+                            <a
+                                className="h-fit w-full"
+                                href={`/projects/${data.id}`}>
                                 <span
                                     className="aos-init aos-animate"
                                 >
@@ -34,7 +36,7 @@ const AllProjects = () => {
                                         className="aspect-3/2 w-full overflow-hidden rounded-3xl"
                                     >
                                         <Image
-                                            alt="Aora"
+                                            alt={data.alt}
                                             width={600}
                                             height={300}
                                             decoding="async"

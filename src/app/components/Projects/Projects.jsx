@@ -34,7 +34,10 @@ const Projects = () => {
                         .filter((data) => data.fav)
                         .map((data, index) => (
                             <div className="opacity-container-child group h-fit w-full cursor-pointer sm:even:mt-14" key={index}>
-                                <a className="h-fit w-full" href="projects/aora">
+                                <a
+                                    className="h-fit w-full"
+                                    href={`/projects/${data.id}`}
+                                >
                                     <span
                                         className="aos-init aos-animate"
                                     >

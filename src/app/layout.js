@@ -71,7 +71,7 @@ export const metadata = {
     siteName: "Lazim MV Portfolio",
     images: [
       {
-        url: "https://lazimmv.vercel.app/openGraph.png",
+        url: "https://lazim-three.vercel.app/opengraph.png",
         width: 1200,
         height: 630,
       },
@@ -84,7 +84,7 @@ export const metadata = {
     title: "Lazim Latheef (Lazim MV) — Software Developer",
     description:
       "I'm Lazim Latheef, a fullstack developer crafting high-performance web and mobile solutions. Explore my portfolio showcasing expertise in Next.js, React, and scalable apps.",
-    images: ["https://lazimmv.vercel.app/openGraph.png"],
+    images: ["https://lazim-three.vercel.app/opengraph.png"],
   },
   robots: {
     index: true,
@@ -103,7 +103,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
