@@ -13,6 +13,17 @@ export default function SmoothScrolling({ children }) {
   const [loadingProgress, setLoadingProgress] = useState(0);
 
   useEffect(() => {
+      const root = document.documentElement
+      const stored = localStorage.getItem('theme')
+      if (stored) {
+          root.classList.toggle('dark', stored === 'dark')
+      } else {
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+          root.classList.toggle('dark', prefersDark)
+      }
+  }, [])
+
+  useEffect(() => {
     const initializeScroll = async () => {
       try {
         // Step 1: Initialize Lenis

@@ -1,10 +1,14 @@
 "use client";
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image';
-import React from 'react'
+import React, { useState } from 'react'
 
 const ClientComponent = ({ project, next, previous }) => {
+    const [iframeLoaded, setIframeLoaded] = useState(false);
 
+
+
+    
     return (
         <>
             <div className="flex w-full items-center justify-between">
@@ -104,6 +108,10 @@ const ClientComponent = ({ project, next, previous }) => {
                         } relative`}
                     >
 
+                        {!iframeLoaded && (
+                            <div className="absolute inset-0 bg-gray-200 animate-pulse rounded z-5" />
+                        )}
+
                         {/* Clickable overlay for opening in new tab */}
                         <div
                             onClick={() => window.open(project.link, '_blank')}
@@ -121,19 +129,22 @@ const ClientComponent = ({ project, next, previous }) => {
                                 pointerEvents: 'none',
                                 overflow: 'hidden',
                                 scrollBehavior: 'smooth',
+                                isolation: 'isolate',
+                                willChange: 'transform',
 
                             }}
-                            loading="lazy"
+                            onLoad={() => setIframeLoaded(true)}
+                            // loading="lazy"
                             sandbox="allow-same-origin allow-scripts allow-forms allow-popups"
                             title={`Preview of ${project.name || 'project'}`}
                             // onLoad={handleIframeLoad}
-                            onError={() => setIsLoading(false)}
+                            onError={() => setIframeLoaded(false)}
                             scrolling='no'
                         />
 
 
                         <div className='absolute bottom-2 right-2 z-[15]'>
-                            <div className='bg-[var(--bg-800)] bg-opacity-50 text-white text-xs px-2 py-1 rounded'>
+                            <div className='bg-[var(--bg-800)] bg-opacity-50 text-[var(--text-primary)] text-xs px-2 py-1 rounded'>
                                 Preview • Click to open full site
                             </div>
                         </div>

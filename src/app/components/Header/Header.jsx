@@ -67,16 +67,9 @@ const Header = () => {
 
 
 
-    useEffect(() => {
-        const root = document.documentElement
-        const stored = localStorage.getItem('theme')
-        if (stored) {
-            root.classList.toggle('dark', stored === 'dark')
-        } else {
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-            root.classList.toggle('dark', prefersDark)
-        }
-    }, [])
+
+
+
     return (
         <header className="container pointer-events-none sticky flex justify-center items-center left-0 right-0 top-0 z-50 w-full px-0 py-4">
             <nav

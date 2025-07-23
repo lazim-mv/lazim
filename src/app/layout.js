@@ -7,6 +7,8 @@ import Footer from './components/Footer/Footer';
 import BottomFade from './components/common/BottomFade';
 import Header from './components/Header/Header';
 import MobileNav from './components/MobileNav/MobileNav';
+import { GoogleAnalytics } from '@next/third-parties/google';
+import SEO from './components/common/SEO';
 
 const satoshi = localFont({
   src: [
@@ -104,6 +106,29 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
+          <>
+            <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
+            {/* <EnhancedReferrerTracker /> */}
+          </>
+        )}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Lazim Latheef",
+              alternateName: "Lazim MV",
+              url: "https://lazimmv.vercel.app",
+              jobTitle: "Software Developer",
+              sameAs: [
+                "https://www.linkedin.com/in/lazim-mv-/",
+                "https://github.com/lazim-mv",
+              ],
+            }),
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -124,6 +149,7 @@ export default function RootLayout({ children }) {
       <body
         className={` ${satoshi.variable}  ${clashDisplay.variable} antialiased relative flex h-full min-h-dvh flex-col`}
       >
+        <SEO />
         <SmoothScrolling>
 
           <div className="flex grow flex-col items-center">

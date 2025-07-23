@@ -6,6 +6,8 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
     const [progress, setProgress] = useState(0);
     const [dots, setDots] = useState('');
 
+
+
     useEffect(() => {
         if (loadingProgress > 0) {
             // Use the actual loading progress from parent
