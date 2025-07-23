@@ -5,6 +5,7 @@ import { ChevronDown, Github, Instagram, Linkedin, Mail, MessageCircle } from 'l
 import React, { useState } from 'react'
 import { faqs } from './data'
 import Image from 'next/image';
+import img1 from '../../../../public/aboutpage/me.jpg'
 
 const ClientComponent = () => {
 
@@ -107,7 +108,7 @@ const ClientComponent = () => {
                             decoding="async"
                             data-nimg={1}
                             className="border-bg-600 aspect-square overflow-hidden rounded-full border object-cover p-2"
-                            src="/aboutPage/me.jpg"
+                            src={img1}
                             style={{ color: "transparent" }}
                         />
                         <p className="mt-4 mb-6">
