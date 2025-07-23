@@ -4,6 +4,7 @@ import SectionTitleAndDesc from '@/app/components/common/SectionTitleAndDesc'
 import { ChevronDown, Github, Instagram, Linkedin, Mail, MessageCircle } from 'lucide-react'
 import React, { useState } from 'react'
 import { faqs } from './data'
+import Image from 'next/image';
 
 const ClientComponent = () => {
 
@@ -98,7 +99,7 @@ const ClientComponent = () => {
                             </span>
                             <p className="text-xs" style={{ color: 'var(--text-primary)' }}>Available for work</p>
                         </div>
-                        <img
+                        <Image
                             alt="Lazim Latheef (Lazim Mv) Lazim"
                             loading="lazy"
                             width={100}
