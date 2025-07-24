@@ -4,7 +4,7 @@ import './MarqueeStyles.css';
 
 const logos = [
     "HTML", "CSS", "JavaScript", "TypeScript", "React.js", "Next.js",
-    "GSAP", "Redux", "Angular", "ReactNative", "Git", "Node.js", "Express.js", "MySQL", "MongoDB",
+    "GSAP", "Redux", "Angular", "ReactNative", "GIT", "Node.js", "Express.js", "MySQL", "MongoDB",
     "PostgreSQL", "Docker", "Firebase", "AWS", "FramerMotion",
     "Figma", "TailwindCSS",
 ];
