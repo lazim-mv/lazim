@@ -1,5 +1,9 @@
-import {  Smartphone, ServerCog, Cloud, BarChart3, CodeXml } from 'lucide-react';
-import hostingImg from '../../../../public/services/hosting.webp'
+import { Smartphone, ServerCog, Cloud, BarChart3, CodeXml } from 'lucide-react';
+import img1 from '../../../../public/services/1.webp'
+import img2 from '../../../../public/services/2.webp'
+import img3 from '../../../../public/services/3.webp'
+import img4 from '../../../../public/services/hosting.webp'
+import img5 from '../../../../public/services/5.webp'
 
 
 
@@ -9,7 +13,7 @@ export const servicesData = [
     title: "End-to-End Web Solutions",
     description:
       "From landing pages to complex web apps and e‑commerce platforms – I build fast, scalable websites that work flawlessly on all devices. Whether you need a sleek portfolio, an online store, or a custom dashboard like a CRM or ERP, I bring it to life using modern tech from front to back. Design, development, integrations – all covered.",
-    image: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&format=webp",
+    image: img1,
     Icon: CodeXml,
   },
   {
@@ -17,7 +21,7 @@ export const servicesData = [
     title: "Mobile App Development",
     description:
       "Need an app for both iOS and Android without breaking the bank? I’ve got you. I craft smooth, high-performance mobile apps using React Native – all while making sure they’re user-friendly, bug-free, and ready for the app stores. One codebase, every platform.",
-    image: "https://images.pexels.com/photos/7947951/pexels-photo-7947951.jpeg?auto=compress&format=webp",
+    image: img2,
     Icon: Smartphone,
   },
   {
@@ -25,7 +29,7 @@ export const servicesData = [
     title: "Backend & API Development",
     description:
       "Your app's power lies behind the scenes. I create scalable, secure, and clean backends using modern tools like Node.js, NestJS, and PostgreSQL. From crafting APIs to managing databases, I make sure your app’s data flows smoothly and securely.",
-    image: "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg?auto=compress&format=webp",
+    image: img3,
     Icon: ServerCog,
   },
   {
@@ -33,7 +37,7 @@ export const servicesData = [
     title: "Web Hosting & Deployment",
     description:
       "Your website deserves rock-solid hosting. I take care of everything from DNS to deployment—whether it’s Vercel, AWS, cPanel, or Cloudflare. Expect blazing-fast load times, rock-solid uptime, and smooth CI/CD workflows so your product gets live and stays live.",
-    image: hostingImg,
+    image: img4,
     Icon: Cloud,
   },
   {
@@ -41,7 +45,7 @@ export const servicesData = [
     title: "Marketing, Analytics & Optimization",
     description:
       "It’s not just about building it—it’s about getting it seen. I combine the power of SEO, Google Analytics, and smart digital marketing to help your brand reach the right audience. From boosting search rankings to tracking what’s working, I help you grow with data-driven strategies.",
-    image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&format=webp",
+    image: img5,
     Icon: BarChart3,
   },
 ];

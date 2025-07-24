@@ -77,7 +77,7 @@ const Services = () => {
 
                 {/* Image Preview with smooth transition */}
                 <div className="w-full h-[100%] md:w-1/2 transition-all duration-100">
-                    <img
+                    <Image
                         key={servicesData[activeIndex].image} // forces re-render to animate
                         src={servicesData[activeIndex].image}
                         alt={servicesData[activeIndex].title}

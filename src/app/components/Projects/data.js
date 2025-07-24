@@ -205,7 +205,6 @@ export const projectData = [
     name: "Admin Dashboard",
     link: "https://adminautosports.vercel.app/bikes",
     description: "Dashboard to manage vehicles and more.",
-    image: "https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg",
     webImage: autotradersdash,
     color: "#c7d2fe",
     workDone: "Design & Development",

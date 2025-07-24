@@ -39,7 +39,7 @@ const Hero = () => {
 
             <div className="md:flex-center items-center mt-8 flex flex-col gap-4 md:flex-row">
                 <div className="bg-bg-700 h-px w-full" />
-                <p className="w-full text-center">
+                <p className=" text-center w-full md:w-[200%] lg:w-[120%]">
                     From concept to launch, crafting pixel perfect, accessible digital solutions that maximize impact, accelerate growth, and elevate user experience.
                 </p>
                 <div className="bg-bg-700 h-px w-full" />

@@ -33,7 +33,7 @@ const Footer = () => {
                         </div>
 
                  
-                        <div className='w-[85vw] md:w-[70%] mx-auto md:mx-0'>
+                        <div className='w-[90%] md:w-[80%] lg:[w-70%] mx-auto md:mx-0'>
                             <SectionTitleAndDesc text="From Idea to Reality Let's Talk." heading animation={false} />
                         </div>
                     </div>

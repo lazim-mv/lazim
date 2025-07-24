@@ -73,7 +73,7 @@ export const metadata = {
     siteName: "Lazim MV Portfolio",
     images: [
       {
-        url: "https://lazim-three.vercel.app/opengraph.png",
+        url: "https://lazim-mv.vercel.app/opengraph.png",
         width: 1200,
         height: 630,
       },
@@ -86,7 +86,7 @@ export const metadata = {
     title: "Lazim Latheef (Lazim MV) — Software Developer",
     description:
       "I'm Lazim Latheef, a fullstack developer crafting high-performance web and mobile solutions. Explore my portfolio showcasing expertise in Next.js, React, and scalable apps.",
-    images: ["https://lazim-three.vercel.app/opengraph.png"],
+    images: ["https://lazim-mv.vercel.app/opengraph.png"],
   },
   robots: {
     index: true,
@@ -154,9 +154,8 @@ export default function RootLayout({ children }) {
 
           <div className="flex grow flex-col items-center">
             <div
-              className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] animate-pulse"
-            // className="fixed top-0 left-0 right-0 bottom-0 z-[-1] [background-image:linear-gradient(var(--loading-bg-rgb)_1px,transparent_1px),linear-gradient(90deg,var(--loading-bg-rgb)_1px,transparent_1px)] [background-size:40px_40px] animate-pulse"
-
+              // className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] animate-pulse"
+              className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] "
             />
 
             <Header />

@@ -59,7 +59,7 @@ html.theme-transition * {
   --gradient-start: rgba(247, 248, 250, 0.9);
   --gradient-end: rgba(247, 248, 250, 0);
 
-  --loading-bg-rgb: rgba(0, 0, 0, 0.14);
+  --loading-bg-rgb: rgba(0, 0, 0, 0.2);
 }
 
 .dark {
@@ -96,7 +96,7 @@ html.theme-transition * {
   --gradient-start: rgba(11, 11, 13, 0.9);
   --gradient-end: rgba(11, 11, 13, 0);
 
-  --loading-bg-rgb: rgba(255, 255, 255, 0.14);
+  --loading-bg-rgb: rgba(255, 255, 255, 0.2);
 }
 
 html.dark .shimmer {

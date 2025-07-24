@@ -35,7 +35,7 @@ const ClientSideComponent = () => {
                     <div className='h-full w-full overflow-hidden rounded-b-full'>
                         <Image
                             alt="Hero Image"
-                            loading="lazy"
+                            priority
                             width={400}
                             height={600}
                             decoding="async"

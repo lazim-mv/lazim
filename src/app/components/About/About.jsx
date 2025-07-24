@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useLayoutEffect } from 'react'
+import React, { useRef, useLayoutEffect, useState } from 'react'
 import gsap from '@/app/utils/gsapInit';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SectionName from '../common/SectionName';
@@ -9,6 +9,8 @@ import FadeInOnScroll from '../common/FadeInOnScroll';
 
 const About = () => {
     const containerRef = useRef(null)
+    const [isMobile, setIsMobile] = useState(false)
+
 
     const text = "I'm Lazim Latheef. Fullstack developer and creative technologist passionate about turning ideas into clean, scalable digital experiences. I partner with teams of all sizes to build fast, accessible websites, dashboards, and full products that balance design and functionality with purpose and performance."
 
@@ -16,7 +18,7 @@ const About = () => {
         const ctx = gsap.context(() => {
             const textElement = containerRef.current.querySelector('.description-text')
 
-            const isMobile = window.innerWidth < 768
+            setIsMobile(window.innerWidth < 768);
 
             if (!textElement) return
 
@@ -72,7 +74,7 @@ const About = () => {
 
             <SectionName title="About Me" extraClass="mb-4" />
 
-            <FadeInOnScroll>
+            <FadeInOnScroll animation={!isMobile}>
                 <p className='description-text font-satoshi text-center 
             text-text-primary text-2xl font-medium tracking-wide sm:text-3xl md:text-[2rem]'
                     style={{

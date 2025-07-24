@@ -13,14 +13,14 @@ export default function SmoothScrolling({ children }) {
   const [loadingProgress, setLoadingProgress] = useState(0);
 
   useEffect(() => {
-      const root = document.documentElement
-      const stored = localStorage.getItem('theme')
-      if (stored) {
-          root.classList.toggle('dark', stored === 'dark')
-      } else {
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-          root.classList.toggle('dark', prefersDark)
-      }
+    const root = document.documentElement
+    const stored = localStorage.getItem('theme')
+    if (stored) {
+      root.classList.toggle('dark', stored === 'dark')
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+      root.classList.toggle('dark', prefersDark)
+    }
   }, [])
 
   useEffect(() => {
@@ -41,7 +41,7 @@ export default function SmoothScrolling({ children }) {
         setLoadingProgress(Math.floor(Math.random() * 25) + 1); // 1 to 25
 
         // Small delay to show progress
-        await new Promise(resolve => setTimeout(resolve, 300));
+        await new Promise(resolve => setTimeout(resolve, 100));
 
         function raf(time) {
           lenis.raf(time);
@@ -57,7 +57,7 @@ export default function SmoothScrolling({ children }) {
 
         // Random progress between 25-50
         setLoadingProgress(Math.floor(Math.random() * 26) + 25); // 25 to 50
-        await new Promise(resolve => setTimeout(resolve, 300));
+        await new Promise(resolve => setTimeout(resolve, 100));
 
         // Step 3: Setup ScrollTrigger
         ScrollTrigger.defaults({ scroller: lenis.wrapper });
@@ -81,12 +81,12 @@ export default function SmoothScrolling({ children }) {
         ScrollTrigger.refresh();
 
         // Random progress between 50-90
-        setLoadingProgress(Math.floor(Math.random() * 41) + 50); // 50 to 90
-        await new Promise(resolve => setTimeout(resolve, 300));
+        setLoadingProgress(Math.floor(Math.random() * 18) + 80); // 50 to 90
+        await new Promise(resolve => setTimeout(resolve, 100));
 
         // Step 4: Finalization
-        setLoadingProgress(100); // Always 100 at the end
-        await new Promise(resolve => setTimeout(resolve, 500)); // Let user see 100%
+        isReady && setLoadingProgress(100); // Always 100 at the end
+        await new Promise(resolve => setTimeout(resolve, 400)); // Let user see 100%
 
         setIsReady(true);
 

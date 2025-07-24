@@ -61,7 +61,7 @@ export const workPhilosophies = [
         icon: Brain,
         title: "Continuous Learning",
         description:
-            "I believe in constantly evolving—whether it's mastering new tools or refining soft skills, growth is a lifelong journey."
+            "I believe in constantly evolving whether it's mastering new tools or refining soft skills, growth is a lifelong journey."
     },
     {
         icon: Users,

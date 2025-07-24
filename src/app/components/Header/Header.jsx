@@ -23,6 +23,8 @@ const Header = () => {
     useGSAP(() => {
         if (!containerRef.current) return;
         const element = containerRef.current;
+        const isMobile = window.innerWidth < 768;
+
 
         const animation = gsap.to(containerRef.current, {
             scrollTrigger: {
@@ -54,7 +56,7 @@ const Header = () => {
             maxWidth: "600px",
             outline: "1px solid var(--bg-700)",
             opacity: 1,
-            width: "100%",
+            width: isMobile ? "98%" : "100%",
             ease: "power1.out",
         });
 

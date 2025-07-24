@@ -3,66 +3,62 @@ import React from 'react'
 const SEO = () => {
     return (
         <div className="sr-only">
-            <h1>Lazim Latheef (Lazim MV) – Full Stack Developer Portfolio</h1>
+            <h1>Lazim Latheef (Lazim MV) – Full Stack Developer in UAE & India (Kozhikode, Kerala)</h1>
 
             <div>
-                <h2>Professional Software Developer</h2>
+                <h2>Top Full Stack Developer – UAE & India</h2>
                 <p>
-                    Experienced Full Stack Developer specializing in modern web and mobile
-                    development using React, Next.js, and other JavaScript frameworks.
+                    I’m a freelance Full Stack Developer based in Kozhikode (Calicut), Kerala, India, with experience delivering modern web and mobile apps for clients across India and the UAE, including Dubai, Abu Dhabi, and Sharjah.
                 </p>
                 <ul>
-                    <li>Next.js and React Development</li>
-                    <li>Mobile App Development (React Native, Expo)</li>
-                    <li>RESTful & GraphQL API Integration</li>
-                    <li>Scalable, High-Performance Web Applications</li>
-                    <li>Frontend Architecture & Component Libraries</li>
-                    <li>Modern UI/UX Implementation</li>
+                    <li>Full Stack Development – UAE & Kerala</li>
+                    <li>Next.js, React.js, React Native Expert</li>
+                    <li>Freelance Developer in Dubai, Kozhikode</li>
+                    <li>Remote Software Projects – UAE & GCC Countries</li>
+                    <li>Custom Business Apps for UAE Startups</li>
                 </ul>
-                <p>Based in Kerala, India – working with global clients remotely.</p>
+                <p>
+                    Available for freelance work, remote contracts, and full-time roles in the UAE or globally.
+                </p>
             </div>
 
             <div>
-                <h2>Services Offered</h2>
+                <h2>Looking for Developer Jobs in UAE & India</h2>
+                <p>
+                    Actively open to full-time software developer jobs and freelance opportunities in Dubai, Abu Dhabi, Sharjah, and other UAE locations, as well as remote roles worldwide.
+                </p>
+            </div>
+
+            <div>
+                <h2>Software Development Services</h2>
                 <ul>
                     <li>Custom Web Application Development</li>
-                    <li>Mobile Application Development (Android/iOS)</li>
-                    <li>Business Dashboard and Admin Panels</li>
-                    <li>Landing Pages and Portfolio Websites</li>
-                    <li>UI/UX Design Implementation</li>
-                    <li>Performance Optimization & SEO</li>
-                    <li>Third-Party API Integration</li>
-                    <li>Authentication & Role-Based Access Systems</li>
-                    <li>Deployment and Hosting Setup (Vercel, Netlify, etc.)</li>
+                    <li>Mobile App Development (React Native, Expo)</li>
+                    <li>Freelance Software Development in UAE</li>
+                    <li>Admin Dashboards & Business Portals</li>
+                    <li>Landing Pages for Startups & SMEs</li>
+                    <li>SEO-Friendly Websites for UAE Businesses</li>
+                    <li>API Integration and Automation Tools</li>
+                    <li>Authentication, Role-Based Access</li>
+                    <li>Hosting & Deployment – Vercel, Netlify, DigitalOcean</li>
                 </ul>
             </div>
 
             <div>
                 <h2>Featured Projects</h2>
                 <ul>
-                    <li>
-                        <strong>SmartPlus Cargo</strong> – Logistics platform with dashboard, shipment tracking, and cargo management.
-                    </li>
-                    <li>
-                        <strong>Sicura Solutions</strong> – Security services website with multilingual support and custom CMS features.
-                    </li>
-                    <li>
-                        <strong>AutoScale Labs</strong> – Portfolio and automation agency site with form integrations and service modules.
-                    </li>
-                    <li>
-                        <strong>Car & Bike Reseller Dashboard</strong> – Full-stack ERP for vehicle dealers using Next.js, Prisma, and PostgreSQL.
-                    </li>
-                    <li>
-                        <strong>Social Media AutoPoster</strong> – OAuth-based app for cross-platform content posting (Instagram, Twitter, YouTube).
-                    </li>
+                    <li><strong>SmartPlus Cargo</strong> – Logistics dashboard for a UAE-based cargo firm.</li>
+                    <li><strong>Sicura Solutions</strong> – Security service website with localization.</li>
+                    <li><strong>AutoScale Labs</strong> – Digital agency portfolio and lead generation.</li>
+                    <li><strong>Vehicle Reseller ERP</strong> – Vehicle stock and sales manager.</li>
+                    <li><strong>Social Media AutoPoster</strong> – Schedule and post content across platforms.</li>
                 </ul>
             </div>
 
             <div>
                 <h2>Contact</h2>
                 <p>
-                    Open to freelance projects, collaborations, and long-term opportunities.
-                    Let’s build something great together.
+                    Let’s work together – I’m open to clients in the UAE, India, and globally. Whether you're in Dubai, Sharjah, or Calicut, let's build scalable solutions together.
                 </p>
                 <p>Email: lazim.latheef.dev@gmail.com</p>
             </div>
