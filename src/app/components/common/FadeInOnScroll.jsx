@@ -10,6 +10,7 @@ const FadeInOnScroll = ({
   duration = 1,
   triggerClass = "", // optional
   animation = true, // whether to apply animation
+  fadeAffect = true,
 }) => {
   const wrapperRef = useRef(null);
 
@@ -23,7 +24,7 @@ const FadeInOnScroll = ({
 
     gsap.fromTo(
       triggerElement,
-      { opacity: 0, y },
+      { opacity: fadeAffect ? 0 : 1, y },
       {
         opacity: 1,
         y: 0,

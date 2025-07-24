@@ -40,11 +40,11 @@ const Services = () => {
                     {servicesData.map((item, index) => {
                         const isOpen = expanded === index;
                         return (
-                            <FadeInOnScroll key={index}>
+                            <FadeInOnScroll key={index} fadeAffect={false}>
                                 <div
                                     key={item.id}
                                     className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800"
-                                    // className="border border-bg-700 rounded-2xl overflow-hidden transition-all duration-800"
+                                // className="border border-bg-700 rounded-2xl overflow-hidden transition-all duration-800"
                                 >
                                     <button
                                         className="w-full text-left p-4 flex items-center justify-between cursor-pointer"
@@ -76,7 +76,7 @@ const Services = () => {
                 </div>
 
                 {/* Image Preview with smooth transition */}
-                <div className="w-full h-[100%] md:w-1/2 transition-all duration-100">
+                <div className="w-full h-[100%] md:w-1/2 transition-all duration-100 order-[-1]">
                     <Image
                         key={servicesData[activeIndex].image} // forces re-render to animate
                         src={servicesData[activeIndex].image}
