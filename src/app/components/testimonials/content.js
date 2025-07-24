@@ -1,105 +1,74 @@
 export const testimonialsData = [
-    {
-        name: "Sarah Ahmed",
-        initial: "SA",
-        company: "Safari Logistics",
-        testimonial:
-            "Lazim delivered a responsive website that truly elevated our brand. His attention to detail and ability to translate our needs into a functional interface was impressive.",
-        image: "/avatars/sarah.jpg",
-    },
-    {
-        name: "Ankit Sharma",
-        initial: "AS",
-        company: "NexGen IT Solutions",
-        testimonial:
-            "The backend and frontend integration Lazim handled for us was seamless. Our platform has never run smoother, thanks to his expertise.",
-        image: "/avatars/ankit.jpg",
-    },
-    {
-        name: "Fatima Al Zayani",
-        initial: "FZ",
-        company: "Zayani Group",
-        testimonial:
-            "Lazim’s design work exceeded expectations. He brought clarity and visual strength to our brand through a clean and modern UI.",
-        image: "/avatars/fatima.jpg",
-    },
-    {
-        name: "Yusuf Khan",
-        initial: "YK",
-        company: "MotoRent",
-        testimonial:
-            "We wanted a bike booking platform that looked cool and worked fast—and that’s exactly what Lazim built for us. Highly recommend!",
-        image: "/avatars/yusuf.jpg",
-    },
-    {
-        name: "Aisha Raj",
-        initial: "AR",
-        company: "Fashify",
-        testimonial:
-            "Our e-commerce site now feels premium, thanks to Lazim’s frontend work. He’s quick, collaborative, and never compromises on quality.",
-        image: "/avatars/aisha.jpg",
-    },
-    {
-        name: "Mohammed Al Saadi",
-        initial: "MAS",
-        company: "EduPlus",
-        testimonial:
-            "The educational platform Lazim helped us build is robust and user-friendly. Parents and students both love the new interface.",
-        image: "/avatars/mohammed.jpg",
-    },
-    {
-        name: "Julia Fernandes",
-        initial: "JF",
-        company: "GreenWave Energy",
-        testimonial:
-            "Lazim transformed our outdated site into a modern green tech platform. Fast, mobile-friendly, and optimized for conversions!",
-        image: "/avatars/julia.jpg",
-    },
-    {
-        name: "Imran Qureshi",
-        initial: "IQ",
-        company: "Service Sphere",
-        testimonial:
-            "From dashboard flows to performance optimization, Lazim’s contributions were game-changing. He’s a reliable and sharp developer.",
-        image: "/avatars/imran.jpg",
-    },
-    {
-        name: "Ritika D’Souza",
-        initial: "RD",
-        company: "BrighTech Innovations",
-        testimonial:
-            "We collaborated on a SaaS MVP with Lazim, and the result was fantastic. Clean UI, tight functionality, and solid deployment support.",
-        image: "/avatars/ritika.jpg",
-    }
-
+  {
+    name: "Sarah Ahmed",
+    initial: "SA",
+    company: "Safari Logistics",
+    testimonial:
+      "Working with Lazim was a smooth experience. He took the time to understand what we needed, and the final website reflects our brand well. It looks good, works on all devices, and feels reliable. We appreciated how he turned our ideas into something that made sense for users without overcomplicating things.",
+    image: "/avatars/sarah.jpg",
+  },
+  {
+    name: "Ankit Sharma",
+    initial: "AS",
+    company: "NexGen IT Solutions",
+    testimonial:
+      "Lazim helped bring stability to our system. The integration with our backend was handled really well, and we noticed better performance almost right away. What stood out was his clear communication—he kept us in the loop and never left us guessing about progress or timelines.",
+    image: "/avatars/ankit.jpg",
+  },
+  {
+    name: "Fatima Al Zayani",
+    initial: "FZ",
+    company: "Zayani Group",
+    testimonial:
+      "We hired Lazim to refresh our website’s design, and he definitely delivered. The layout feels cleaner and more modern, and it's easier to navigate now. He also listened to feedback and was open to iterating. Overall, a solid designer and developer to work with.",
+    image: "/avatars/fatima.jpg",
+  },
+  {
+    name: "Yusuf Khan",
+    initial: "YK",
+    company: "MotoRent",
+    testimonial:
+      "We needed a bike rental site that felt fast and simple. Lazim got the idea right away and built something that just works. It’s responsive, performs well, and looks the part. He was quick to respond when we had questions or needed tweaks too.",
+    image: "/avatars/yusuf.jpg",
+  },
+  {
+    name: "Aisha Raj",
+    initial: "AR",
+    company: "Fashify",
+    testimonial:
+      "Our old UI felt a bit outdated, so we brought Lazim in to improve it. He brought a fresh look to the site and paid attention to the little things—like fonts and buttons—that really made a difference. Everything felt pretty seamless from start to finish.",
+    image: "/avatars/aisha.jpg",
+  },
+  {
+    name: "Mohammed Al Saadi",
+    initial: "MAS",
+    company: "EduPlus",
+    testimonial:
+      "We wanted a platform that students and teachers could use easily, and Lazim helped us get there. He was thoughtful about user experience and made sure the admin tools didn’t feel overwhelming. The site runs well and looks clean, which is exactly what we needed.",
+    image: "/avatars/mohammed.jpg",
+  },
+  {
+    name: "Julia Fernandes",
+    initial: "JF",
+    company: "GreenWave Energy",
+    testimonial:
+      "Lazim gave our website a much-needed upgrade. It’s now mobile-friendly, loads faster, and fits our brand better. He also paid attention to performance and SEO, which we hadn’t really thought about before. We’re already seeing some positive results.",
+    image: "/avatars/julia.jpg",
+  },
+  {
+    name: "Imran Qureshi",
+    initial: "IQ",
+    company: "Service Sphere",
+    testimonial:
+      "Lazim really took ownership of our dashboard project. He wasn’t just doing tasks—we could tell he was thinking through how things could work better. The UI feels snappier now, and it’s a lot easier to manage on the backend too. He’s someone we’d gladly work with again.",
+    image: "/avatars/imran.jpg",
+  },
+  {
+    name: "Ritika D’Souza",
+    initial: "RD",
+    company: "BrighTech Innovations",
+    testimonial:
+      "We teamed up with Lazim to build our MVP. He helped shape the early ideas and brought them to life quickly. The design was clean, and it helped us onboard users smoothly. He was also helpful with deployment, which made launch day a lot less stressful.",
+    image: "/avatars/ritika.jpg",
+  },
 ];
-
-
-
-// export const projectSequence = [
-//     {
-//         step: "01",
-//         title: "Strategic Planning",
-//         description:
-//             "We begin with a conversation about your goals, target audience, and design expectations. From there, I’ll craft a tailored website strategy aligned with your vision."
-//     },
-//     {
-//         step: "02",
-//         title: "Visual Design",
-//         description:
-//             "Based on the plan, I design an engaging and brand aligned interface. You'll receive regular previews to ensure the design evolves in line with your preferences."
-//     },
-//     {
-//         step: "03",
-//         title: "Development Phase",
-//         description:
-//             "Once the design is approved, I start building your website using modern tech and best practices. Throughout the process, I’ll keep you updated and incorporate your feedback."
-//     },
-//     {
-//         step: "04",
-//         title: "Launch & Support",
-//         description:
-//             "After final testing and your approval, your site goes live. I also offer ongoing support to make sure everything stays smooth and up to date."
-//     }
-// ];
-
