@@ -7,6 +7,7 @@ import MarqueeLogos from '@/app/components/common/marquee/MarqueeLogos'
 import SectionName from '@/app/components/common/SectionName'
 import { experienceData, projectProcessSection, projectSequenceData, workPhilosophies } from '../data';
 import FadeInOnScroll from '@/app/components/common/FadeInOnScroll';
+import ProjectProcess from './ProjectProcess/ProjectProcess';
 
 const ClientSideComponent = () => {
 
@@ -160,7 +161,7 @@ const ClientSideComponent = () => {
                 </div>
             </section>
 
-            <section className='max-screen'>
+            {/* <section className='max-screen'>
                 <div className='w-full'>
                     <SectionName title={projectProcessSection.sectionName} extraClass="mb-4" />
                     <SectionTitleAndDesc text={projectProcessSection.title} heading />
@@ -186,7 +187,9 @@ const ClientSideComponent = () => {
                         </div>
                     </div>
                 </FadeInOnScroll>
-            </section>
+            </section> */}
+
+            <ProjectProcess />
 
             <section className='max-screen flex flex-col-reverse items-center gap-8 md:flex-row md:gap-20'>
                 <div className='grid grid-cols-1 grid-rows-[masonry] gap-4 sm:grid-cols-2'>

@@ -11,6 +11,7 @@ const FadeInOnScroll = ({
   triggerClass = "", // optional
   animation = true, // whether to apply animation
   fadeAffect = true,
+  extraClass = "",
 }) => {
   const wrapperRef = useRef(null);
 
@@ -43,7 +44,7 @@ const FadeInOnScroll = ({
 
 
   return (
-    <div ref={wrapperRef}>
+    <div ref={wrapperRef} className={`${extraClass}`}>
       {children}
     </div>
   );

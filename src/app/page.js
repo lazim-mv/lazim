@@ -4,7 +4,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Services from "./components/Services/Services";
 import Testimonials from "./components/testimonials/Testimonials";
-
+import ProjectProcess from "./(pages)/about/components/ProjectProcess/ProjectProcess";
 export default function Home() {
   return (
     <>
@@ -13,6 +13,7 @@ export default function Home() {
       <About />
       <Projects />
       <Services />
+      <ProjectProcess />
       <Testimonials hasMounted={true} />
     </>
   );
