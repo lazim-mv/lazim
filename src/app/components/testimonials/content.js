@@ -1,13 +1,4 @@
 export const testimonialsData = [
-
-  {
-    name: "Ankit Sharma",
-    initial: "AS",
-    company: "Nexwave",
-    testimonial:
-      "Lazim helped bring stability to our system. The integration with our backend was handled really well, and we noticed better performance almost right away. What stood out was his clear communication he kept us in the loop and never left us guessing about progress or timelines.",
-    image: "/avatars/ankit.jpg",
-  },
   {
     name: "Sarah Ahmed",
     initial: "SA",
@@ -15,6 +6,14 @@ export const testimonialsData = [
     testimonial:
       "Working with Lazim was a smooth experience. He took the time to understand what we needed, and the final website reflects our brand well. It looks good, works on all devices, and feels reliable. We appreciated how he turned our ideas into something that made sense for users without overcomplicating things.",
     image: "/avatars/sarah.jpg",
+  },
+  {
+    name: "Ankit Sharma",
+    initial: "AS",
+    company: "Nexwave",
+    testimonial:
+      "Lazim helped bring stability to our system. The integration with our backend was handled really well, and we noticed better performance almost right away. What stood out was his clear communication he kept us in the loop and never left us guessing about progress or timelines.",
+    image: "/avatars/ankit.jpg",
   },
   {
     name: "Fatima Al Zayani",
