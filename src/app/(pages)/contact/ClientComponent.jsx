@@ -2,18 +2,45 @@
 import SectionName from '@/app/components/common/SectionName'
 import SectionTitleAndDesc from '@/app/components/common/SectionTitleAndDesc'
 import { ChevronDown, Github, Instagram, Linkedin, Mail, MessageCircle } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { faqs } from './data'
 import Image from 'next/image';
 import img1 from '../../../../public/aboutpage/me.jpg'
+import emailjs from "@emailjs/browser";
 
 const ClientComponent = () => {
-
+    const formRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(false);
     const [expanded, setExpanded] = useState(0);
 
     const toggleAccordion = (index) => {
         setExpanded(prev => (prev === index ? null : index));
     };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setIsLoading(true);
+
+        emailjs
+            .sendForm(
+                "service_25zeyqg", 
+                "template_1c1sijg", 
+                formRef.current,
+                "lX5reIWKLGr1jLJVH" 
+            )
+            .then(
+                (result) => {
+                    alert("Message sent!");
+                    formRef.current?.reset();
+                },
+                (error) => {
+                    console.error(error.text);
+                    alert("Failed to send message.");
+                }
+            )
+            .finally(() => setIsLoading(false));
+    };
+
     return (
         <>
             <section className='max-screen'>
@@ -23,7 +50,11 @@ const ClientComponent = () => {
                 </div>
 
                 <div className='flex w-full flex-col gap-10 sm:flex-row sm:gap-8 mt-8' >
-                    <form className='w-full space-y-4'>
+                    <form
+                        ref={formRef}
+                        onSubmit={handleSubmit}
+                        className='w-full space-y-4'
+                    >
 
                         <div className="space-y-2 mb-4">
                             <label
@@ -79,13 +110,13 @@ const ClientComponent = () => {
                             <a href="/contact">
                                 <button
                                     className="btn ring-offset-background focus-visible:ring-highlight-primary whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none disabled:opacity-50 btn__outline"
-                                    type="button"
+                                    type="submit"
                                     aria-disabled="false"
                                 >
                                     <span className="btn__ripple" />
                                     <span className="block overflow-hidden">
                                         <span className="btn__text" data-attr="Submit">
-                                            Submit
+                                            {isLoading ? "Sending..." : "Submit"}
                                         </span>
                                     </span>
                                 </button>
