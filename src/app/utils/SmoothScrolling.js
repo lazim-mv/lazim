@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Lenis from "lenis";
 import gsap, { ScrollTrigger } from "./gsapInit";
 import LoadingScreen from "../components/common/LoadingScreen";
+import LoadingScreen2 from "../components/common/LoadingScreen2";
 import { usePathname } from "next/navigation";
 
 export default function SmoothScrolling({ children }) {
@@ -11,6 +12,7 @@ export default function SmoothScrolling({ children }) {
   const lenisRef = useRef(null);
   const [isReady, setIsReady] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState(0);
+  const [revealComplete, setRevealComplete] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement
@@ -81,12 +83,12 @@ export default function SmoothScrolling({ children }) {
         ScrollTrigger.refresh();
 
         // Random progress between 50-90
-        setLoadingProgress(Math.floor(Math.random() * 18) + 80); // 50 to 90
+        setLoadingProgress(Math.floor(Math.random() * 31) + 50); // 50 to 70
         await new Promise(resolve => setTimeout(resolve, 100));
 
         // Step 4: Finalization
-        isReady && setLoadingProgress(100); // Always 100 at the end
-        await new Promise(resolve => setTimeout(resolve, 400)); // Let user see 100%
+        setLoadingProgress(100); // Always 100 at the end
+        await new Promise(resolve => setTimeout(resolve, 200)); // Let user see 100%
 
         setIsReady(true);
 
@@ -106,14 +108,35 @@ export default function SmoothScrolling({ children }) {
     };
   }, []);
 
+  const handleRevealComplete = () => {
+    setRevealComplete(true);
+  };
+
+  console.log(revealComplete, "revealComplete");
+
   return (
     <>
       {!isReady && (
         <div className="loading">
-          <LoadingScreen isReady={isReady} loadingProgress={loadingProgress} />
+          <LoadingScreen
+            isReady={isReady}
+            loadingProgress={loadingProgress}
+          />
+
         </div>
       )}
       {isReady && children}
+      {/* {!revealComplete && (
+        <div className="loading">
+          <LoadingScreen2
+            isReady={isReady}
+            loadingProgress={loadingProgress}
+            onRevealComplete={handleRevealComplete}
+          />
+
+        </div>
+      )}
+      {isReady && children} */}
     </>
   );
 }

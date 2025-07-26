@@ -2,11 +2,11 @@ import localFont from 'next/font/local'
 
 import "./globals.css";
 import SmoothScrolling from './utils/SmoothScrolling';
-import Head from 'next/head';
 import Footer from './components/Footer/Footer';
 import BottomFade from './components/common/BottomFade';
 import Header from './components/Header/Header';
 import MobileNav from './components/MobileNav/MobileNav';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleAnalytics } from '@next/third-parties/google';
 import SEO from './components/common/SEO';
 
@@ -149,6 +149,7 @@ export default function RootLayout({ children }) {
       <body
         className={` ${satoshi.variable}  ${clashDisplay.variable} antialiased relative flex h-full min-h-dvh flex-col`}
       >
+
         <SEO />
         <SmoothScrolling>
 
@@ -168,6 +169,7 @@ export default function RootLayout({ children }) {
             </main>
           </div>
         </SmoothScrolling>
+        <SpeedInsights />
       </body>
     </html>
   );

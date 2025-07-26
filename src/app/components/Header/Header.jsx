@@ -26,6 +26,21 @@ const Header = () => {
         const isMobile = window.innerWidth < 768;
 
 
+        gsap.set(containerRef.current, {
+            y: "-100%",
+            filter: "blur(8px)",
+            opacity: 0.7,
+        });
+
+        gsap.to(containerRef.current, {
+            y: 0,
+            filter: "blur(0px)",
+            opacity: 1,
+            duration: .8,
+            ease: "back.out(1.2)", 
+        });
+
+
         const animation = gsap.to(containerRef.current, {
             scrollTrigger: {
                 trigger: containerRef.current,
@@ -73,7 +88,7 @@ const Header = () => {
 
 
     return (
-        <header className="container pointer-events-none sticky flex justify-center items-center left-0 right-0 top-0 z-50 w-full px-0 py-4">
+        <header className="container pointer-events-none sticky flex justify-center items-center left-0 right-0 top-0 z-40 w-full px-0 py-4">
             <nav
                 ref={containerRef}
                 className="max-screen pointer-events-auto flex w-full
