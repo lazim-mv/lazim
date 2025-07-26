@@ -40,37 +40,36 @@ const Services = () => {
                     {servicesData.map((item, index) => {
                         const isOpen = expanded === index;
                         return (
-                            <FadeInOnScroll key={index} fadeAffect={false}>
-                                <div
-                                    key={item.id}
-                                    className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800"
-                                // className="border border-bg-700 rounded-2xl overflow-hidden transition-all duration-800"
-                                >
-                                    <button
-                                        className="w-full text-left p-4 flex items-center justify-between cursor-pointer"
-                                        style={{ color: 'var(--text-primary)' }}
-                                        onClick={() => toggleAccordion(index)}
-                                    >
-                                        <span className="flex items-center gap-2">
-                                            <item.Icon size={18} /> {item.title}
-                                        </span>
-                                        <span
-                                            className={`transition-transform duration-800 ${isOpen ? 'rotate-180' : 'rotate-0'
-                                                }`}
-                                        >
-                                            <ChevronDown size={18} />
-                                        </span>
-                                    </button>
 
-                                    {/* Accordion content with animated height */}
-                                    <div
-                                        className={`transition-all duration-800 overflow-hidden ${isOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+                            <div
+                                key={item.id}
+                                className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800"
+                            // className="border border-bg-700 rounded-2xl overflow-hidden transition-all duration-800"
+                            >
+                                <button
+                                    className="w-full text-left p-4 flex items-center justify-between cursor-pointer"
+                                    style={{ color: 'var(--text-primary)' }}
+                                    onClick={() => toggleAccordion(index)}
+                                >
+                                    <span className="flex items-center gap-2">
+                                        <item.Icon size={18} /> {item.title}
+                                    </span>
+                                    <span
+                                        className={`transition-transform duration-800 ${isOpen ? 'rotate-180' : 'rotate-0'
                                             }`}
                                     >
-                                        <div className="p-4 text-sm text-gray-400">{item.description}</div>
-                                    </div>
+                                        <ChevronDown size={18} />
+                                    </span>
+                                </button>
+
+                                {/* Accordion content with animated height */}
+                                <div
+                                    className={`transition-all duration-800 overflow-hidden ${isOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
+                                        }`}
+                                >
+                                    <div className="p-4 text-sm text-gray-400">{item.description}</div>
                                 </div>
-                            </FadeInOnScroll>
+                            </div>
                         );
                     })}
                 </div>

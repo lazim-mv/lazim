@@ -162,13 +162,8 @@ export default function RootLayout({ children }) {
             <MobileNav />
             <BottomFade fadeDirection="bottom" placement="top" />
             <main className="grow w-[100%]">
-              <div
-                className="relative flex w-full flex-col justify-center revealedFx"
-                style={{ transitionDuration: '1.5s', transform: 'translateY(0px)' }}
-              >
-                {children}
-                <Footer />
-              </div>
+              {children}
+              <Footer />
               <BottomFade fadeDirection="top" placement="bottom" />
             </main>
           </div>
