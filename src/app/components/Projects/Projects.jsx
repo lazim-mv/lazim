@@ -1,11 +1,8 @@
 "use client";
 import React, { useRef } from 'react'
 import SectionName from '../common/SectionName'
-import { useGSAP } from '@gsap/react';
-import gsap from '@/app/utils/gsapInit';
 import { projectData } from './data';
 import Image from 'next/image';
-import TextReveal from '../common/gsapAnimations/TextReveal';
 import FadeInOnScroll from '../common/FadeInOnScroll';
 import SectionTitleAndDesc from '../common/SectionTitleAndDesc';
 
