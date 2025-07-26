@@ -26,19 +26,19 @@ const Header = () => {
         const isMobile = window.innerWidth < 768;
 
 
-        gsap.set(containerRef.current, {
-            y: "-100%",
-            filter: "blur(8px)",
-            opacity: 0.7,
-        });
+        // gsap.set(containerRef.current, {
+        //     y: "-100%",
+        //     filter: "blur(8px)",
+        //     opacity: 0.7,
+        // });
 
-        gsap.to(containerRef.current, {
-            y: 0,
-            filter: "blur(0px)",
-            opacity: 1,
-            duration: .8,
-            ease: "back.out(1.2)", 
-        });
+        // gsap.to(containerRef.current, {
+        //     y: 0,
+        //     filter: "blur(0px)",
+        //     opacity: 1,
+        //     duration: .8,
+        //     ease: "back.out(1.2)", 
+        // });
 
 
         const animation = gsap.to(containerRef.current, {

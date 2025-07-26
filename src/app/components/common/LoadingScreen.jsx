@@ -70,12 +70,13 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
                         background: 'linear-gradient(135deg, var(--bg-700), var(--bg-800))',
                         borderColor: 'rgba(0, 217, 255, 0.3)'
                     }}>
-                        <span className="text-2xl font-black tracking-wide" style={{
-                            background: 'linear-gradient(45deg, #00d9ff, #66e6ff, #00d9ff)',
-                            WebkitBackgroundClip: 'text',
-                            backgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent'
-                        }}>
+                        <span className="text-2xl font-[var(text-primary)] font-semibold tracking-wide"
+                            style={{
+                                background: 'linear-gradient(20deg,var(--text-primary), #66e6ff, var(--text-primary))',
+                                WebkitBackgroundClip: 'text',
+                                backgroundClip: 'text',
+                                WebkitTextFillColor: 'transparent'
+                            }}>
                             LM
                         </span>
                     </div>
@@ -92,7 +93,7 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
                 {/* Loading text with typewriter effect */}
                 <div className="text-center space-y-3 font-normal">
                     <h1 className="text-xl font-light text-slate-200 tracking-wide" style={{ color: "var(--text-primary)" }}>
-                        Loading Portfolio{dots}
+                        Loading{dots}
                     </h1>
 
                     {/* Progress bar */}
