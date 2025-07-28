@@ -52,7 +52,7 @@ const Hero = () => {
                         <a
                             target="_blank"
                             className="flex items-center justify-center text-text-secondary gap-2 text-sm uppercase transition"
-                            href="https://www.linkedin.com/in/lazim-mv/"
+                            href="https://www.linkedin.com/in/lazim-mv-/"
                         >
                             LinkedIn
                             <span>

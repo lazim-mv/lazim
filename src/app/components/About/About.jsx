@@ -5,14 +5,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SectionName from '../common/SectionName';
 import FadeInOnScroll from '../common/FadeInOnScroll';
 
-
+export const aboutSectionText = "I'm Lazim Latheef. Fullstack developer and creative technologist passionate about turning ideas into clean, scalable digital experiences. I partner with teams of all sizes to build fast, accessible websites, dashboards, and full products that balance design and functionality with purpose and performance."
 
 const About = () => {
     const containerRef = useRef(null)
     const [isMobile, setIsMobile] = useState(false)
 
 
-    const text = "I'm Lazim Latheef. Fullstack developer and creative technologist passionate about turning ideas into clean, scalable digital experiences. I partner with teams of all sizes to build fast, accessible websites, dashboards, and full products that balance design and functionality with purpose and performance."
 
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
@@ -23,13 +22,13 @@ const About = () => {
             if (!textElement) return
 
             // Split text into words first, then characters within each word
-            const words = text.split(' ').map((word, wordIndex) => {
+            const words = aboutSectionText.split(' ').map((word, wordIndex) => {
                 const chars = word.split('').map((char, charIndex) => {
                     return `<span class="char" style="opacity: 0.2; display: inline-block;">${char}</span>`
                 }).join('')
 
                 // Wrap each word in a span with inline-block and add space after (except last word)
-                const spaceAfter = wordIndex < text.split(' ').length - 1 ?
+                const spaceAfter = wordIndex < aboutSectionText.split(' ').length - 1 ?
                     '<span class="char" style="opacity: 0.2; display: inline-block;">&nbsp;</span>' : ''
 
                 return `<span class="word" style="display: inline-block; white-space: nowrap;">${chars}</span>${spaceAfter}`
@@ -85,7 +84,7 @@ const About = () => {
                         display: 'block' // Ensure block-level centering
                     }}
                 >
-                    {text}
+                    {aboutSectionText}
                 </p>
             </FadeInOnScroll>
         </section>

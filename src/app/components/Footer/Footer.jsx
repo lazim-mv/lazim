@@ -63,7 +63,7 @@ const Footer = () => {
 
                 <div className="flex items-center  opacity-container text-text-secondary gap-6">
                     <a
-                        href="https://www.linkedin.com/in/lazim-mv/"
+                        href="https://www.linkedin.com/in/lazim-mv-/"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: 'var(--text-secondary)' }}

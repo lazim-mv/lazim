@@ -158,7 +158,7 @@ export default function RootLayout({ children }) {
               // className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] animate-pulse"
               className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] "
             />
-
+            {/* <ChatWidget /> */}
             <Header />
             <MobileNav />
             <BottomFade fadeDirection="bottom" placement="top" />

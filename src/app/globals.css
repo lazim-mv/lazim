@@ -132,6 +132,8 @@ body {
   scrollbar-gutter: stable;
 }
 
+
+::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
   border: 2px solid var(--bg-900);
   cursor: grab;
@@ -156,6 +158,18 @@ body {
   color: var(--bg-900);
   background: var(--highlight);
 }
+
+/* .chatMessagingScreen::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--bg-900);
+
+}
+
+.chatMessagingScreen::-webkit-scrollbar-thumb {
+  background-color: var(--accent-foreground);
+  height: 30px;
+  width: 20px;
+} */
 
 h1,
 h2 {
@@ -190,6 +204,10 @@ p {
 
 a {
   width: fit-content;
+}
+
+.bg-primary {
+  background-color: var(--primary);
 }
 
 .text-highlight-primary {
@@ -465,3 +483,6 @@ a {
   max-width: var(--breakpoint-lg) !important;
 }
 
+.border-border {
+  border-color: var(--border);
+}

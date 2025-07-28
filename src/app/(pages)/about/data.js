@@ -83,8 +83,6 @@ export const workPhilosophies = [
     }
 ];
 
-
-
 export const experienceData = [
     {
         company: "Teacherium",
