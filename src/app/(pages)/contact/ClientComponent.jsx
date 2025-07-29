@@ -3,19 +3,15 @@ import SectionName from '@/app/components/common/SectionName'
 import SectionTitleAndDesc from '@/app/components/common/SectionTitleAndDesc'
 import { ChevronDown, Github, Instagram, Linkedin, Mail, MessageCircle } from 'lucide-react'
 import React, { useRef, useState } from 'react'
-import { faqs } from './data'
 import Image from 'next/image';
-import img1 from '../../../../public/aboutpage/me.jpg'
+import img1 from '../../../../public/aboutpage/me75.webp'
 import emailjs from "@emailjs/browser";
+import FAQS from '../../components/Faqs/FAQS'
 
 const ClientComponent = () => {
     const formRef = useRef(null);
     const [isLoading, setIsLoading] = useState(false);
-    const [expanded, setExpanded] = useState(0);
 
-    const toggleAccordion = (index) => {
-        setExpanded(prev => (prev === index ? null : index));
-    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,10 +19,10 @@ const ClientComponent = () => {
 
         emailjs
             .sendForm(
-                "service_25zeyqg", 
-                "template_1c1sijg", 
+                "service_25zeyqg",
+                "template_1c1sijg",
                 formRef.current,
-                "lX5reIWKLGr1jLJVH" 
+                "lX5reIWKLGr1jLJVH"
             )
             .then(
                 (result) => {
@@ -43,7 +39,7 @@ const ClientComponent = () => {
 
     return (
         <>
-            <section className='max-screen'>
+            <section id='ContactForm' className='max-screen'>
                 <SectionName title="connect with me" extraClass="mb-4" />
                 <div className='w-[100%] md:w-[40%]'>
                     <SectionTitleAndDesc text="Let's start a project together" heading />
@@ -196,47 +192,7 @@ const ClientComponent = () => {
                 </div>
             </section>
 
-            <section className='max-screen justify-between gap-6 sm:flex'>
-                <div>
-                    <SectionName title="Faqs" extraClass="mb-4" animation={false} />
-                    <SectionTitleAndDesc text="Have Questions?" heading animation={false} />
-                </div>
-                <div className='w-full md:w-2/3 mt-8 md:mt-0'>
-                    {faqs.map((faq, index) => {
-                        const isOpen = expanded === index;
-                        return (
-                            <div
-                                key={index}
-                                className="border border-bg-700 bg-bg-800 rounded-2xl overflow-hidden transition-all duration-800 mb-4"
-                            >
-                                <button
-                                    className="w-full text-left p-4 flex items-center justify-between cursor-pointer"
-                                    style={{ color: 'var(--text-primary)' }}
-                                    onClick={() => toggleAccordion(index)}
-                                >
-                                    <span className="flex items-center gap-2">
-                                        <span>{faq.number}</span>{faq.question}
-                                    </span>
-                                    <span
-                                        className={`transition-transform duration-800 ${isOpen ? 'rotate-180' : 'rotate-0'
-                                            }`}
-                                    >
-                                        <ChevronDown size={18} />
-                                    </span>
-                                </button>
-
-                                {/* Accordion content with animated height */}
-                                <div
-                                    className={`transition-all duration-800 overflow-hidden ${isOpen ? 'max-h-60 opacity-100' : 'max-h-0 opacity-0'
-                                        }`}
-                                >
-                                    <div className="p-4 text-sm text-gray-400">{faq.answer}</div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-            </section>
+            <FAQS />
         </>
     )
 }

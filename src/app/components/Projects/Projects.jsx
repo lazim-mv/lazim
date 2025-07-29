@@ -12,7 +12,7 @@ const Projects = () => {
 
 
     return (
-        <section className='max-screen' ref={containerRef}>
+        <section id='projects' className='max-screen' ref={containerRef}>
 
             <SectionName title='My Work' extraClass="mb-4" />
 

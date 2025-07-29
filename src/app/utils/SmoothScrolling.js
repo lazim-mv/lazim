@@ -108,12 +108,10 @@ export default function SmoothScrolling({ children }) {
 
   return (
     <>
-      {!isReady && (
-        <div className="loading">
-          <LoadingScreen isReady={isReady} loadingProgress={loadingProgress} />
-        </div>
-      )}
-      {isReady && children}
+
+      <LoadingScreen isReady={isReady} loadingProgress={loadingProgress} />
+
+      {children}
     </>
   );
 }

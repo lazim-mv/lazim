@@ -24,7 +24,7 @@ const Services = () => {
 
 
     return (
-        <section className='max-screen' ref={containerRef}>
+        <section id='ServiesOffered' className='max-screen' ref={containerRef}>
 
             <SectionName title='Services' extraClass="mb-4" />
 

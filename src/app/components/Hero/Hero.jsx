@@ -4,7 +4,7 @@ import { ArrowUpRight, Hand, Sparkle } from 'lucide-react'
 
 const Hero = () => {
     return (
-        <section className='max-screen hero'>
+        <section id='hero' className='max-screen hero'>
             <div className='md:flex-center items-center mb-8 flex flex-col gap-4 md:flex-row'>
                 <div className="bg-bg-700 h-px w-full" />
                 <p className="text-text-primary flex items-center justify-center gap-2 w-max whitespace-nowrap">

@@ -69,7 +69,7 @@ const About = () => {
     }, [])
 
     return (
-        <section ref={containerRef} className='max-screen flex-center flex-col'>
+        <section id='aboutlazimlatheef' ref={containerRef} className='max-screen flex-center flex-col'>
 
             <SectionName title="About Me" extraClass="mb-4" />
 

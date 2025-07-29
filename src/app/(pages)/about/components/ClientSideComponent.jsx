@@ -8,6 +8,7 @@ import SectionName from '@/app/components/common/SectionName'
 import { experienceData, projectProcessSection, projectSequenceData, workPhilosophies } from '../data';
 import FadeInOnScroll from '@/app/components/common/FadeInOnScroll';
 import ProjectProcess from './ProjectProcess/ProjectProcess';
+import img1 from '../../../../../public/aboutpage/me75.webp'
 
 const ClientSideComponent = () => {
 
@@ -28,6 +29,7 @@ const ClientSideComponent = () => {
     return (
         <>
             <section
+            id='hero'
                 className='max-screen md:py-lg md:pt-sm flex flex-col 
             items-center gap-8 overflow-x-hidden pt-0 sm:flex-row md:gap-16 md:pt-8'
                 style={{ paddingTop: "2rem", }}
@@ -35,15 +37,16 @@ const ClientSideComponent = () => {
                 <div className='relative w-full sm:w-1/2'>
                     <div className='h-full w-full overflow-hidden rounded-b-full'>
                         <Image
-                            alt="Hero Image"
+                            alt="Lazim mv lazim latheef image"
                             priority
-                            width={400}
-                            height={600}
+                            width={828}
+                            height={1104}
                             decoding="async"
                             data-nimg={1}
                             className="aspect-3/4 h-full w-full object-cover transition duration-300 hover:scale-[1.015]"
                             style={{ color: "transparent" }}
-                            src="/aboutpage/me.jpg"
+                            sizes="(min-width: 768px) 50vw, 100vw"
+                            src={img1}
                         />
 
                     </div>
@@ -92,7 +95,7 @@ const ClientSideComponent = () => {
 
             <MarqueeLogos border={true} />
 
-            <section className='max-screen flex flex-col gap-8 sm:flex-row sm:gap-12'>
+            <section id='WorkExperience' className='max-screen flex flex-col gap-8 sm:flex-row sm:gap-12'>
                 <div className='top-40 h-fit md:sticky'>
                     <SectionName title='Career Highlights' extraClass="mb-4" />
                     <SectionTitleAndDesc text='Experience' heading />
@@ -191,7 +194,7 @@ const ClientSideComponent = () => {
 
             <ProjectProcess />
 
-            <section className='max-screen flex flex-col-reverse items-center gap-8 md:flex-row md:gap-20'>
+            <section id='workPhilosophies' className='max-screen flex flex-col-reverse items-center gap-8 md:flex-row md:gap-20'>
                 <div className='grid grid-cols-1 grid-rows-[masonry] gap-4 sm:grid-cols-2'>
                     {workPhilosophies.map((item, index) => (
                         <div className="rounded-3xl border border-bg-600 p-6 h-fit w-full " key={index}>

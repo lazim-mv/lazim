@@ -106,6 +106,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <meta name="google-site-verification" content="6LRarymhEIVTyACtauKkakElHkMRXC-L-4wRfeZ1jvM" />
         {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
           <>
             <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID} />
@@ -158,11 +159,11 @@ export default function RootLayout({ children }) {
               // className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] animate-pulse"
               className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-[radial-gradient(circle_at_1px_1px,var(--loading-bg-rgb)_1px,transparent_0)] [background-size:40px_40px] "
             />
-            {/* <ChatWidget /> */}
             <Header />
             <MobileNav />
             <BottomFade fadeDirection="bottom" placement="top" />
             <main className="grow w-[100%]">
+            
               {children}
               <Footer />
               <BottomFade fadeDirection="top" placement="bottom" />

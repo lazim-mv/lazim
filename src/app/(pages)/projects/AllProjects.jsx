@@ -11,14 +11,13 @@ const AllProjects = () => {
     const containerRef = useRef(null);
 
     return (
-        <section className='max-screen' ref={containerRef}>
+        <section id='All Projects' className='max-screen' ref={containerRef}>
             <SectionName title='My Work' extraClass="mb-4" />
-
-
 
             <div className='md:w-[50%] w-[100%]'>
                 <SectionTitleAndDesc text="Creating next level digital products" heading="true" />
             </div>
+
             <SectionTitleAndDesc text="Here's a curated selection showcasing my expertise and the achieved results." desc="true" />
 
             <div className='opacity-container py-16 grid grid-cols-1 grid-rows-[masonry] gap-y-10 sm:grid-cols-2 sm:gap-x-16 sm:gap-y-0' >
@@ -64,9 +63,6 @@ const AllProjects = () => {
                     </div>
                 ))}
             </div>
-
-
-
         </section>
     )
 }

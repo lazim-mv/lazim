@@ -117,7 +117,7 @@ const ProjectProcess = () => {
     }, { scope: containerRef });
 
     return (
-        <div ref={containerRef} className="relative">
+        <div id='ProjectProcess' ref={containerRef} className="relative">
             <div ref={contentRef} className="max-screen py-20 overflow-hidden">
                 <div className="w-full mb-8">
                     <SectionName title={projectProcessSection.sectionName} extraClass="mb-4" />

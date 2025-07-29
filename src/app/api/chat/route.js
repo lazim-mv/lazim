@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Groq } from 'groq-sdk';
 import { projectData } from '../../components/Projects/data';
 import { workPhilosophies } from '../../(pages)/about/data';
-import { faqs } from '../../(pages)/contact/data';
+import { faqs } from '../../components/Faqs/data';
 // import {
 //     projectData,
 //     testimonials,
