@@ -163,9 +163,11 @@ export default function RootLayout({ children }) {
             <MobileNav />
             <BottomFade fadeDirection="bottom" placement="top" />
             <main className="grow w-[100%]">
-            
+
               {children}
               <Footer />
+              <div className="fixed w-full bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+
               <BottomFade fadeDirection="top" placement="bottom" />
             </main>
           </div>
