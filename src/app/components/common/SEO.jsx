@@ -60,7 +60,7 @@ const SEO = () => {
                 <p>
                     Let’s work together – I’m open to clients in the UAE, India, and globally. Whether you're in Dubai, Sharjah, or Calicut, let's build scalable solutions together.
                 </p>
-                <p>Email: lazim.latheef.dev@gmail.com</p>
+                <p>Email: lazimlatheef@gmail.com</p>
             </div>
         </div>
     )
