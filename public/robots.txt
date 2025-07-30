@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://lazim-mv.vercel.app
-
-# Sitemaps
-Sitemap: https://lazim-mv.vercel.app/sitemap.xml
