@@ -274,6 +274,7 @@ export const projectData = [
   }
 ];
 
+
 // #fde68a – Warm Sunlight
 
 // #fcd34d – Golden Glow

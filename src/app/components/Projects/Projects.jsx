@@ -8,9 +8,6 @@ import SectionTitleAndDesc from '../common/SectionTitleAndDesc';
 
 const Projects = () => {
     const containerRef = useRef(null);
-
-
-
     return (
         <section id='projects' className='max-screen' ref={containerRef}>
 
