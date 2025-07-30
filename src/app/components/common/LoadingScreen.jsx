@@ -133,7 +133,7 @@ export default function LoadingScreen({ isReady = false, loadingProgress = 0 }) 
                 </div>
 
                 {/* Bottom accent */}
-                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
             </div>
         </div>
     );
