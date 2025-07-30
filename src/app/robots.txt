@@ -1,4 +1,4 @@
-# https://lazim-mv.vercel.app/ robots.txt
+# https://lazim-mv.vercel.app robots.txt
 User-agent: *
 Allow: /
 Allow: /about
@@ -17,4 +17,4 @@ Crawl-delay: 10
 Sitemap: https://lazim-mv.vercel.app/sitemap.xml
 
 # Host
-Host: https://lazim-mv.vercel.app/
+Host: https://lazim-mv.vercel.app
