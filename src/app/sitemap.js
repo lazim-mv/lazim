@@ -5,7 +5,7 @@ export const revalidate = 3600;
 export default async function sitemap() {
     const staticRoutes = [
         {
-            url: 'https://lazim-mv.vercel.app/',
+            url: 'https://lazim-mv.vercel.app',
             lastModified: '2024-02-07',
             changefreq: 'weekly',
             priority: 1.0,
