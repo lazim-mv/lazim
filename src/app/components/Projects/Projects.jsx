@@ -89,7 +89,6 @@ const Projects = () => {
                     </a>
                 </div>
             </FadeInOnScroll>
-
         </section>
     )
 }

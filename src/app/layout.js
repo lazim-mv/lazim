@@ -69,7 +69,7 @@ export const metadata = {
     title: "Lazim Latheef (Lazim MV) — Software Developer",
     description:
       "I'm Lazim Latheef, a fullstack developer crafting high-performance web and mobile solutions. Explore my portfolio showcasing expertise in Next.js, React, and scalable apps.",
-    url: "https://lazimmv.vercel.app",
+    url: "https://lazim-mv.vercel.app/",
     siteName: "Lazim MV Portfolio",
     images: [
       {
@@ -121,7 +121,7 @@ export default function RootLayout({ children }) {
               "@type": "Person",
               name: "Lazim Latheef",
               alternateName: "Lazim MV",
-              url: "https://lazimmv.vercel.app",
+              url: "https://lazim-mv.vercel.app/",
               jobTitle: "Software Developer",
               sameAs: [
                 "https://www.linkedin.com/in/lazim-mv-/",

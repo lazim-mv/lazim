@@ -10,9 +10,9 @@ import img5 from '../../../../public/services/5.webp'
 export const servicesData = [
   {
     id: "01",
-    title: "End-to-End Web Solutions",
+    title: "End to End Web Solutions",
     description:
-      "From landing pages to complex web apps and e‑commerce platforms – I build fast, scalable websites that work flawlessly on all devices. Whether you need a sleek portfolio, an online store, or a custom dashboard like a CRM or ERP, I bring it to life using modern tech from front to back. Design, development, integrations – all covered.",
+      "From landing pages to complex web apps and e‑commerce platforms. I build fast, scalable websites that work flawlessly on all devices. Whether you need a sleek portfolio, an online store, or a custom dashboard like a CRM or ERP, I bring it to life using modern tech from front to back. Design, development, integrations – all covered.",
     image: img1,
     Icon: CodeXml,
   },
@@ -20,7 +20,7 @@ export const servicesData = [
     id: "02",
     title: "Mobile App Development",
     description:
-      "Need an app for both iOS and Android without breaking the bank? I’ve got you. I craft smooth, high-performance mobile apps using React Native – all while making sure they’re user-friendly, bug-free, and ready for the app stores. One codebase, every platform.",
+      "Need an app for both iOS and Android without breaking the bank? I’ve got you. I craft smooth, high performance mobile apps using React Native – all while making sure they’re user friendly, bug free, and ready for the app stores. One codebase, every platform.",
     image: img2,
     Icon: Smartphone,
   },
@@ -36,7 +36,7 @@ export const servicesData = [
     id: "04",
     title: "Web Hosting & Deployment",
     description:
-      "Your website deserves rock-solid hosting. I take care of everything from DNS to deployment—whether it’s Vercel, AWS, cPanel, or Cloudflare. Expect blazing-fast load times, rock-solid uptime, and smooth CI/CD workflows so your product gets live and stays live.",
+      "Your website deserves rock solid hosting. I take care of everything from DNS to deployment—whether it’s Vercel, AWS, cPanel, or Cloudflare. Expect blazing fast load times, rock solid uptime, and smooth CI/CD workflows so your product gets live and stays live.",
     image: img4,
     Icon: Cloud,
   },
@@ -44,7 +44,7 @@ export const servicesData = [
     id: "05",
     title: "Marketing, Analytics & Optimization",
     description:
-      "It’s not just about building it—it’s about getting it seen. I combine the power of SEO, Google Analytics, and smart digital marketing to help your brand reach the right audience. From boosting search rankings to tracking what’s working, I help you grow with data-driven strategies.",
+      "It’s not just about building it—it’s about getting it seen. I combine the power of SEO, Google Analytics, and smart digital marketing to help your brand reach the right audience. From boosting search rankings to tracking what’s working, I help you grow with data driven strategies.",
     image: img5,
     Icon: BarChart3,
   },
